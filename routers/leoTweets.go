@@ -16,7 +16,7 @@ func LeoTweets(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if len(r.URL.Query().Get("paginna")) < 1 {
+	if len(r.URL.Query().Get("pagina")) < 1 {
 		http.Error(w, "Debe enviar el parametro pagina", http.StatusBadRequest)
 		return
 	}
