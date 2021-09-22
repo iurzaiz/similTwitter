@@ -16,7 +16,7 @@ func ObtenerBanner(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	perfil, err := bd.BuscoPerfil(ID)
+	perfil, err := bd.BuscoPerfil(ID) 
 	if err != nil {
 		http.Error(w, "Usuario no encontrado", http.StatusBadRequest)
 		return
